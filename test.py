@@ -30,17 +30,6 @@ def test_model(model_path="./models/checkpoint-13000"):
     model.to(device)
     
     # 2. 生成测试数据集
-    # 为了测试方便，我们直接创建一个简单的测试数据集
-    # test_data = [
-    #     {"prompt": "2+3=", "completion": "5"},
-    #     {"prompt": "7+1=", "completion": "8"},
-    #     {"prompt": "4+6=", "completion": "10"},
-    #     {"prompt": "9+0=", "completion": "9"},
-    #     {"prompt": "5+5=", "completion": "10"},
-    # ]
-    # test_dataset = Dataset.from_list(test_data)
-    data_path = "./data/simple_9.jsonl"
-
     data_list = []
     with open(data_path, 'r', encoding='utf-8') as f:
         for line in f:
