@@ -1,14 +1,9 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import Dataset
-<<<<<<< HEAD
 import json
 
 def test_model(model_path="./models/checkpoint-13000"):
-=======
-
-def test_model(model_path="/Users/guoxinyue/repo/MathLM/models/checkpoint-3300"):
->>>>>>> 9adef4937b76736dbb1b67a59b4ece79b7b55319
     """
     加载训练好的模型并进行测试。
     
