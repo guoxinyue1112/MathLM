@@ -20,21 +20,7 @@ def generate_full_math_dataset(filename=dir_path + file_name):
             prompt = f"{a}+{b}="
             completion = f"{result}"
             dataset.append({"prompt": prompt, "completion": completion})
-            # full_text = f"{a} + {b} = {result}"
-            # dataset.append({"text": full_text})
-            # # 确保结果在十以内
-            # if result <= 10:
-            #     full_text = f"{a} + {b} = {result}"
-            #     dataset.append({"text": full_text})
 
-    # # 生成所有减法算式
-    # for a in range(RANGE + 1):
-    #     for b in range(RANGE + 1):
-    #         # 确保结果非负
-    #         if a >= b:
-    #             result = a - b
-    #             full_text = f"{a} - {b} = {result}"
-    #             dataset.append({"text": full_text})
                 
     # 将数据集写入JSON Lines文件
     with open(filename, 'w', encoding='utf-8') as f:
