@@ -34,7 +34,6 @@ dataset = Dataset.from_list(data_list)
 print("数据集加载成功，样本数量：", len(dataset))
 print("第一个样本：", dataset[0])
 
-
 print("step 3/5: 初始化分词器")
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 if tokenizer.pad_token is None:

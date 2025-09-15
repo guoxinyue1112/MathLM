@@ -20,7 +20,6 @@ def generate_full_math_dataset(filename=dir_path + file_name):
             prompt = f"{a}+{b}="
             completion = f"{result}"
             dataset.append({"prompt": prompt, "completion": completion})
-
                 
     # 将数据集写入JSON Lines文件
     with open(filename, 'w', encoding='utf-8') as f:
